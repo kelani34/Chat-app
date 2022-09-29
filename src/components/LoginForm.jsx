@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-// const projectID = '21c73693-cb1b-460a-b23a-32de008b7bbf';
+// const projectID = 'b7b50af1-8b03-4a29-b6e3-e9d08f056875';
 
   const Modal = () => {
   const [username, setUsername] = useState('');
@@ -11,7 +11,7 @@ import axios from 'axios';
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const authObject = { 'Project-ID': "21c73693-cb1b-460a-b23a-32de008b7bbf", 'User-Name': username, 'User-Secret': password };
+    const authObject = { 'Project-ID': "b7b50af1-8b03-4a29-b6e3-e9d08f056875", 'User-Name': username, 'User-Secret': password };
 
     try {
       await axios.get('https://api.chatengine.io/chats', { headers: authObject });
